@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DTContainerViewController_Example' do
+  pod 'DTContainerViewController', :path => '../'
+
+  target 'DTContainerViewController_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
