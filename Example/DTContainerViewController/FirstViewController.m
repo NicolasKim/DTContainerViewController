@@ -14,9 +14,23 @@
 
 @implementation FirstViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    NSLog(@"first will appear");
+}
+-(void)viewDidAppear:(BOOL)animated{
+    NSLog(@"first did appear");
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    NSLog(@"first will disappear");
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    NSLog(@"first did disappear");
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NSLog(@"first did load");
 }
 
 - (void)didReceiveMemoryWarning {

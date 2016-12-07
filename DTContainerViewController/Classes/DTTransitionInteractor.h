@@ -7,7 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+@class DTTransitionContext;
 
-@interface DTTransitionInteractor : NSObject
+@interface DTTransitionInteractor : NSObject<UIViewControllerInteractiveTransitioning>
+@property (nonatomic,weak)DTTransitionContext * containerTransitionContext;
+
+-(void)updateInteractiveTransition:(CGFloat)percentComplete;
+
+-(void)cancelInteractiveTransition;
+
+-(void)finishInteractiveTransition;
 
 @end

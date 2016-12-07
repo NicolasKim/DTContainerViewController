@@ -14,9 +14,23 @@
 
 @implementation SecondViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+    NSLog(@"second will appear");
+}
+-(void)viewDidAppear:(BOOL)animated{
+    NSLog(@"second did appear");
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    NSLog(@"second will disappear");
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    NSLog(@"second did disappear");
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NSLog(@"second did load");
 }
 
 - (void)didReceiveMemoryWarning {

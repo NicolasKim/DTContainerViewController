@@ -13,10 +13,23 @@
 @end
 
 @implementation ThirdViewController
+-(void)viewWillAppear:(BOOL)animated{
+    NSLog(@"third will appear");
+}
+-(void)viewDidAppear:(BOOL)animated{
+    NSLog(@"third did appear");
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    NSLog(@"third will disappear");
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    NSLog(@"third did disappear");
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NSLog(@"third did load");
 }
 
 - (void)didReceiveMemoryWarning {

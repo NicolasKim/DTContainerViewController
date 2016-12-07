@@ -8,6 +8,8 @@
 
 @import UIKit;
 
-@interface DTViewController : UIViewController
+#import <DTFamily/DTContainerViewController.h>
+
+@interface DTViewController : DTContainerViewController
 
 @end

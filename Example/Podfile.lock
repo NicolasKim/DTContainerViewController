@@ -1,0 +1,16 @@
+PODS:
+  - DTContainerViewController (1.0.0)
+
+DEPENDENCIES:
+  - DTContainerViewController (from `../`)
+
+EXTERNAL SOURCES:
+  DTContainerViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DTContainerViewController: a795a5016375f63e6538c1b1020207de1484a01c
+
+PODFILE CHECKSUM: 5667d56ced8749baa6b3cfcb151bfa7acdfb7080
+
+COCOAPODS: 1.1.1

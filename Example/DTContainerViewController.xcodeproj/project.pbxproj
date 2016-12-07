@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B9716EC877CFFF2259AAEAE /* Pods_DTContainerViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B75A9ECDD5C41652AE5462 /* Pods_DTContainerViewController_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,7 +21,14 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		D2C74684F26F2E4382643604 /* Pods_DTContainerViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583726E7D799077E85BEF718 /* Pods_DTContainerViewController_Example.framework */; };
+		992E1E901DF7E5C5004D3F58 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992E1E8E1DF7E5C5004D3F58 /* FirstViewController.m */; };
+		992E1E911DF7E5C5004D3F58 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 992E1E8F1DF7E5C5004D3F58 /* FirstViewController.xib */; };
+		992E1E951DF7E5D4004D3F58 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992E1E931DF7E5D4004D3F58 /* SecondViewController.m */; };
+		992E1E961DF7E5D4004D3F58 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 992E1E941DF7E5D4004D3F58 /* SecondViewController.xib */; };
+		992E1E9D1DF7E602004D3F58 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992E1E9B1DF7E602004D3F58 /* ThirdViewController.m */; };
+		992E1E9E1DF7E602004D3F58 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 992E1E9C1DF7E602004D3F58 /* ThirdViewController.xib */; };
+		B06A16261FF2992C538A8D13 /* libPods-DTContainerViewController_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77CF0843EC36282CE1CF8D /* libPods-DTContainerViewController_Example.a */; };
+		FB9CEE7841A8B9A56658E206 /* libPods-DTContainerViewController_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F9395E836C197032F8B46A /* libPods-DTContainerViewController_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +43,9 @@
 
 /* Begin PBXFileReference section */
 		0F6AE5C472EBE6647769F9B9 /* Pods-DTContainerViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTContainerViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DTContainerViewController_Example/Pods-DTContainerViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		24B75A9ECDD5C41652AE5462 /* Pods_DTContainerViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DTContainerViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DEBEE3807E1361ADE80EA1C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		395BD1AAC03392B62170219E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		583726E7D799077E85BEF718 /* Pods_DTContainerViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DTContainerViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A77CF0843EC36282CE1CF8D /* libPods-DTContainerViewController_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DTContainerViewController_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DEBEE3807E1361ADE80EA1C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		395BD1AAC03392B62170219E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DTContainerViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTContainerViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,8 +67,18 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		63AD2D7AB81C0FE60DC3613A /* Pods-DTContainerViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTContainerViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DTContainerViewController_Example/Pods-DTContainerViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		916E860F32004E308C6E7FF0 /* DTContainerViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DTContainerViewController.podspec; path = ../DTContainerViewController.podspec; sourceTree = "<group>"; };
+		916E860F32004E308C6E7FF0 /* DTContainerViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DTContainerViewController.podspec; path = ../DTContainerViewController.podspec; sourceTree = "<group>"; };
+		992E1E8D1DF7E5C5004D3F58 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		992E1E8E1DF7E5C5004D3F58 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		992E1E8F1DF7E5C5004D3F58 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		992E1E921DF7E5D4004D3F58 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		992E1E931DF7E5D4004D3F58 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		992E1E941DF7E5D4004D3F58 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		992E1E9A1DF7E602004D3F58 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		992E1E9B1DF7E602004D3F58 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		992E1E9C1DF7E602004D3F58 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
 		9F832A8BBD1BDBBAF123CC40 /* Pods-DTContainerViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTContainerViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DTContainerViewController_Tests/Pods-DTContainerViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5F9395E836C197032F8B46A /* libPods-DTContainerViewController_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DTContainerViewController_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB960B5121A3C99B46EC5F73 /* Pods-DTContainerViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTContainerViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DTContainerViewController_Tests/Pods-DTContainerViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +90,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				D2C74684F26F2E4382643604 /* Pods_DTContainerViewController_Example.framework in Frameworks */,
+				B06A16261FF2992C538A8D13 /* libPods-DTContainerViewController_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +101,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				0B9716EC877CFFF2259AAEAE /* Pods_DTContainerViewController_Tests.framework in Frameworks */,
+				FB9CEE7841A8B9A56658E206 /* libPods-DTContainerViewController_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +136,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				583726E7D799077E85BEF718 /* Pods_DTContainerViewController_Example.framework */,
-				24B75A9ECDD5C41652AE5462 /* Pods_DTContainerViewController_Tests.framework */,
+				1A77CF0843EC36282CE1CF8D /* libPods-DTContainerViewController_Example.a */,
+				F5F9395E836C197032F8B46A /* libPods-DTContainerViewController_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,6 +150,15 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* DTViewController.h */,
 				6003F5A6195388D20070C39A /* DTViewController.m */,
+				992E1E8D1DF7E5C5004D3F58 /* FirstViewController.h */,
+				992E1E8E1DF7E5C5004D3F58 /* FirstViewController.m */,
+				992E1E8F1DF7E5C5004D3F58 /* FirstViewController.xib */,
+				992E1E921DF7E5D4004D3F58 /* SecondViewController.h */,
+				992E1E931DF7E5D4004D3F58 /* SecondViewController.m */,
+				992E1E941DF7E5D4004D3F58 /* SecondViewController.xib */,
+				992E1E9A1DF7E602004D3F58 /* ThirdViewController.h */,
+				992E1E9B1DF7E602004D3F58 /* ThirdViewController.m */,
+				992E1E9C1DF7E602004D3F58 /* ThirdViewController.xib */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -278,7 +302,10 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				992E1E9E1DF7E602004D3F58 /* ThirdViewController.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				992E1E911DF7E5C5004D3F58 /* FirstViewController.xib in Resources */,
+				992E1E961DF7E5D4004D3F58 /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,7 +347,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3C971C381B565E3193CFA422 /* [CP] Check Pods Manifest.lock */ = {
@@ -335,7 +362,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		84C5CB6A04E401A4C7434783 /* [CP] Embed Pods Frameworks */ = {
@@ -390,9 +417,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				992E1E951DF7E5D4004D3F58 /* SecondViewController.m in Sources */,
 				6003F59E195388D20070C39A /* DTAppDelegate.m in Sources */,
+				992E1E9D1DF7E602004D3F58 /* ThirdViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* DTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				992E1E901DF7E5C5004D3F58 /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +546,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DTContainerViewController/DTContainerViewController-Prefix.pch";
 				INFOPLIST_FILE = "DTContainerViewController/DTContainerViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +563,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DTContainerViewController/DTContainerViewController-Prefix.pch";
 				INFOPLIST_FILE = "DTContainerViewController/DTContainerViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
