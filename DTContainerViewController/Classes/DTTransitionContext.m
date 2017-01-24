@@ -16,6 +16,9 @@
 @property (nonatomic,assign)BOOL interactive;
 @property (nonatomic,assign)CFTimeInterval transitionDuration;
 @property (nonatomic,assign)float          transitionPercent;
+
+@property (nonatomic,assign)BOOL           trasitionSameObject;
+
 @end
 
 
@@ -153,6 +156,7 @@
 
 -(UIViewController *)viewControllerForKey:(UITransitionContextViewControllerKey)key{
     if ([key isEqualToString:UITransitionContextFromViewControllerKey]) {
+
         return self.fromViewController;
     }
     else if([key isEqualToString:UITransitionContextToViewControllerKey]){
@@ -206,6 +210,4 @@
     }
     [self.privateContainerViewController contextDidFinishTransition:self.isCancelled];
 }
-
-
 @end

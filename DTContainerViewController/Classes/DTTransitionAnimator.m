@@ -25,10 +25,16 @@
     UIViewController * tovc   = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     //获取fromviewcontroller
     UIViewController * fromvc = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+
+    
+    
     //获取容器视图，所有转场都在该视图内进行
     UIView * containerView = [transitionContext containerView];
     UIView * toView        = tovc.view;
     UIView * fromView      = fromvc.view;
+    
+
+    
     //获取转场时长
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     //设置视图为容器视图的大小，考虑后续有控件加入容器视图控制器的view的情况。

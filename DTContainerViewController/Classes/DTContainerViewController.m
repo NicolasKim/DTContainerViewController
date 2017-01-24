@@ -123,6 +123,12 @@
         self.context = [[DTTransitionContext alloc]initWithContainerViewController:self containerView:self.containerView];
         UIViewController * toVC   = [self.dataSource viewControllerAtIndex:selectIndex];
         UIViewController * fromVC = [self.dataSource viewControllerAtIndex:self.currentIndex];
+        
+        
+        if (toVC == fromVC) {//如果是同一个对象
+            
+        }
+       
         self.context.fromViewController = fromVC;
         self.context.toViewController   = toVC;
         self.context.fromIndex = self.currentIndex;
@@ -135,50 +141,6 @@
         }
     }
 }
-
-//
-//-(void)setSelectIndex:(NSUInteger)selectIndex{
-//    
-//    
-//    if (self.childViewControllerCount <= selectIndex || selectIndex<0) {
-//        return;
-//    }
-//    
-//    
-//    
-//    
-//    _selectIndex = selectIndex;
-//    
-//    
-//    
-//    
-//    if ([self isViewLoaded] && !self.isTransitioning) {
-//        
-//        self.context = [[DTTransitionContext alloc]initWithContainerViewController:self containerView:self.containerView];
-//        if (self.currentIndex == selectIndex || selectIndex >= self.childViewControllerCount) {
-//            return;
-//        }
-//        
-//        
-//        UIViewController * toVC   = [self.dataSource viewControllerAtIndex:selectIndex];
-//        UIViewController * fromVC = [self.dataSource viewControllerAtIndex:self.currentIndex];
-//        
-//        self.context.fromViewController = fromVC;
-//        self.context.toViewController   = toVC;
-//        self.context.fromIndex = self.currentIndex;
-//        self.context.toIndex   = selectIndex;
-//        
-//        if (self.isInteractive) {
-//            [self.context startInteractiveTransition];
-//        }
-//        else{
-//            [self.context startAnimationTrasition];
-//        }
-//    }
-//}
-
-
-
 
 
 

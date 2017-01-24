@@ -27,6 +27,7 @@
 		992E1E961DF7E5D4004D3F58 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 992E1E941DF7E5D4004D3F58 /* SecondViewController.xib */; };
 		992E1E9D1DF7E602004D3F58 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 992E1E9B1DF7E602004D3F58 /* ThirdViewController.m */; };
 		992E1E9E1DF7E602004D3F58 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 992E1E9C1DF7E602004D3F58 /* ThirdViewController.xib */; };
+		994D51C01E3723170082A2EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994D51BF1E3723170082A2EF /* LaunchScreen.storyboard */; };
 		B06A16261FF2992C538A8D13 /* libPods-DTContainerViewController_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A77CF0843EC36282CE1CF8D /* libPods-DTContainerViewController_Example.a */; };
 		FB9CEE7841A8B9A56658E206 /* libPods-DTContainerViewController_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F9395E836C197032F8B46A /* libPods-DTContainerViewController_Tests.a */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,7 @@
 		992E1E9A1DF7E602004D3F58 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		992E1E9B1DF7E602004D3F58 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		992E1E9C1DF7E602004D3F58 /* ThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		994D51BF1E3723170082A2EF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F832A8BBD1BDBBAF123CC40 /* Pods-DTContainerViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTContainerViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DTContainerViewController_Tests/Pods-DTContainerViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5F9395E836C197032F8B46A /* libPods-DTContainerViewController_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DTContainerViewController_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB960B5121A3C99B46EC5F73 /* Pods-DTContainerViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DTContainerViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DTContainerViewController_Tests/Pods-DTContainerViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				994D51BF1E3723170082A2EF /* LaunchScreen.storyboard */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for DTContainerViewController */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -304,6 +307,7 @@
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				992E1E9E1DF7E602004D3F58 /* ThirdViewController.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				994D51C01E3723170082A2EF /* LaunchScreen.storyboard in Resources */,
 				992E1E911DF7E5C5004D3F58 /* FirstViewController.xib in Resources */,
 				992E1E961DF7E5D4004D3F58 /* SecondViewController.xib in Resources */,
 			);
@@ -542,7 +546,6 @@
 			baseConfigurationReference = 63AD2D7AB81C0FE60DC3613A /* Pods-DTContainerViewController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DTContainerViewController/DTContainerViewController-Prefix.pch";
 				INFOPLIST_FILE = "DTContainerViewController/DTContainerViewController-Info.plist";
@@ -559,7 +562,6 @@
 			baseConfigurationReference = 0F6AE5C472EBE6647769F9B9 /* Pods-DTContainerViewController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DTContainerViewController/DTContainerViewController-Prefix.pch";
 				INFOPLIST_FILE = "DTContainerViewController/DTContainerViewController-Info.plist";
