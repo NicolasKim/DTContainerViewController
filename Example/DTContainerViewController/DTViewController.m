@@ -37,7 +37,7 @@
     if (self) {
         self.dataSource = self;
         self.delegate = self;
-        self.containerViewEdge = UIEdgeInsetsMake(0, 0, 0, 0);
+        self.containerViewEdge = UIEdgeInsetsMake(64, 0, 0, 0);
     }
     return self;
 }
@@ -61,30 +61,29 @@
     
     [self reloadChildViewControllers];
     
-    
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.selectIndex = 1;
-    });
-    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        self.selectIndex = 2;
-//    });
-//    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        self.selectIndex = 7;
-//    });
-    
-    self.scrollTitleBar = [[DTScrollTitleBar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+
+    self.scrollTitleBar = [[DTScrollTitleBar alloc]initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 44)];
     self.scrollTitleBar.titleBarStyle = DTScrollTitleBarType_fitToTitleSize;
+    self.scrollTitleBar.titleColor = [UIColor lightGrayColor];
+    self.scrollTitleBar.selectedTitleColor = [UIColor blackColor];
     [[[[self.scrollTitleBar titleForTitleBar:^NSString *(NSInteger index) {
-        return [NSString stringWithFormat:@"haha%ld",index];
+        return [NSString stringWithFormat:@"Item%ld",index];
     }] numberOfTitle:^NSInteger{
         return 11;
     }] onSelect:^(NSInteger index) {
         self.selectIndex = index;
     }] reloadData];
     [self.view addSubview:self.scrollTitleBar];
+    
+    
+    UIView * colorBlock = [[UIView alloc]initWithFrame:CGRectMake(0, self.scrollTitleBar.indicatorView.frame.size.height - 5, self.scrollTitleBar.indicatorView.frame.size.width, 5)];
+    colorBlock.backgroundColor = [UIColor blackColor];
+    [self.scrollTitleBar.indicatorView addSubview:colorBlock];
+    colorBlock.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
+    self.scrollTitleBar.indicatorView.backgroundColor = [UIColor whiteColor];
+    
+    
+    
     
 }
 

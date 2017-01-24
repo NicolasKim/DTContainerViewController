@@ -36,6 +36,8 @@
 }
 
 -(void)commonInit{
+    self.showsVerticalScrollIndicator = NO;
+    self.showsHorizontalScrollIndicator = NO;
     _btnArr = [NSMutableArray new];
     _btnFrames = [NSMutableArray new];
     _hEdge = UIEdgeInsetsMake(0, 10, 0, 10);
