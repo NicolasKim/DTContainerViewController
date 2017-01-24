@@ -274,6 +274,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = NicolasKim;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = R33482C953;
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -546,13 +550,16 @@
 			baseConfigurationReference = 63AD2D7AB81C0FE60DC3613A /* Pods-DTContainerViewController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R33482C953;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DTContainerViewController/DTContainerViewController-Prefix.pch";
 				INFOPLIST_FILE = "DTContainerViewController/DTContainerViewController-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autohome.new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0e586440-042f-4fdc-941a-d3ac436df7e5";
+				PROVISIONING_PROFILE_SPECIFIER = AutohomeNew_dev_profile;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -562,12 +569,13 @@
 			baseConfigurationReference = 0F6AE5C472EBE6647769F9B9 /* Pods-DTContainerViewController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DTContainerViewController/DTContainerViewController-Prefix.pch";
 				INFOPLIST_FILE = "DTContainerViewController/DTContainerViewController-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autohome.new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
